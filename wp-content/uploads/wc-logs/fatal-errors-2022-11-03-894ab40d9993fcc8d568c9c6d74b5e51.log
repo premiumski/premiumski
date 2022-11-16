@@ -1,0 +1,17 @@
+2022-11-03T10:19:05+00:00 CRITICAL Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in C:\xampp\htdocs\wordpress\wp-content\plugins\essential-grid\public\essential-grid.class.php:250
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\essential-grid\public\essential-grid.class.php(250): implode(' ', '')
+#1 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(355): Essential_Grid::register_shortcode('', '', 'ess_grid')
+#2 [internal function]: do_shortcode_tag(Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(ess_gr...', 'do_shortcode_ta...', '[ess_grid][/ess...')
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\js_composer\include\classes\editors\class-vc-frontend-editor.php(729): do_shortcode('[ess_grid][/ess...')
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\js_composer\include\classes\editors\class-vc-frontend-editor.php(653): Vc_Frontend_Editor->renderShortcodes(Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(308): Vc_Frontend_Editor->loadShortcodes('')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(13): do_action('template_redire...')
+#10 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#12 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\essential-grid\public\essential-grid.class.php on line 250
+

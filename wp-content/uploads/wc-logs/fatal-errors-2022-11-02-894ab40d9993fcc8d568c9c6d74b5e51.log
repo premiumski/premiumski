@@ -1,0 +1,19 @@
+2022-11-02T16:18:44+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\Requests\Transport\cURL.php on line 484
+
+2022-11-02T21:00:48+00:00 CRITICAL Uncaught ArgumentCountError: 3 arguments are required, 2 given in C:\xampp\htdocs\wordpress\wp-admin\includes\class-bulk-upgrader-skin.php:156
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-admin\includes\class-bulk-upgrader-skin.php(156): sprintf('%1$s installed ...', 'Photo Gallery')
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\new-grid-gallery\class-tgm-plugin-activation.php(3674): Bulk_Upgrader_Skin->after('Photo Gallery')
+#2 C:\xampp\htdocs\wordpress\wp-admin\includes\class-wp-upgrader.php(825): TGMPA_Bulk_Installer_Skin->after()
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\new-grid-gallery\class-tgm-plugin-activation.php(3290): WP_Upgrader->run(Array)
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\new-grid-gallery\class-tgm-plugin-activation.php(3403): TGMPA_Bulk_Installer->run(Array)
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\new-grid-gallery\class-tgm-plugin-activation.php(3009): TGMPA_Bulk_Installer->bulk_install(Array)
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\new-grid-gallery\class-tgm-plugin-activation.php(755): TGMPA_List_Table->process_bulk_actions()
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(308): TGM_Plugin_Activation->install_plugins_page('')
+#8 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#9 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp\htdocs\wordpress\wp-admin\admin.php(259): do_action('appearance_page...')
+#11 C:\xampp\htdocs\wordpress\wp-admin\themes.php(10): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\class-bulk-upgrader-skin.php on line 156
+

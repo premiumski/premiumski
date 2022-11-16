@@ -1,0 +1,155 @@
+<?php
+//Custom Layouts
+$layouts = array(
+		'custom_715' => array(
+				'name' => 'Activity',
+				'template' => '[vc_row 0=\"\" shadowed=\"1\"][vc_column icons_position=\"left\"][trx_sc_content size=\"none\" number_position=\"br\" title_style=\"default\" shadowed=\"1\"][vc_row_inner][vc_column_inner width=\"2/3\" icons_position=\"left\"][trx_sc_action type=\"default\" full_height=\"\" actions=\"%5B%7B%22position%22%3A%22ml%22%2C%22title%22%3A%22Your%20Boarding%20Pass%20Has%20Its%20Benefits.%22%2C%22description%22%3A%22Bonus%20for%20SEA%2C%20PDX%20and%20LAX%20flights%20passengers!%22%2C%22link%22%3A%22%2Fservices-page%2F%22%2C%22link_text%22%3A%22read%20more%22%2C%22bg_image%22%3A%22190%22%2C%22icon%22%3A%22Array%22%7D%2C%7B%22position%22%3A%22ml%22%2C%22title%22%3A%22Our%20Ski%20School%20for%20Adults%20and%20Children.%22%2C%22description%22%3A%22We%20identify%20the%20things%20that%20are%20stopping%20from%20skiing%20well.%22%2C%22link%22%3A%22%2Fservices-page%2F%22%2C%22link_text%22%3A%22read%20more%22%2C%22bg_image%22%3A%22696%22%2C%22icon%22%3A%22Array%22%7D%2C%7B%22position%22%3A%22ml%22%2C%22title%22%3A%22Choice%20of%20Ski%20or%20Snowboard%20Equipment.%22%2C%22description%22%3A%22Step%20by%20step%20on%20how%20to%20pick%20the%20right%20ski%20boots%20for%20you.%22%2C%22link%22%3A%22%2Fservices-page%2F%22%2C%22link_text%22%3A%22read%20more%22%2C%22bg_image%22%3A%22697%22%2C%22icon%22%3A%22Array%22%7D%5D\" slider=\"1\" slider_pagination=\"bottom\" title_style=\"default\" columns=\"1\"][/vc_column_inner][vc_column_inner el_class=\"activity_column\" width=\"1/3\" icons_position=\"left\" css=\".vc_custom_1492410716821{padding-left: 35px !important;}\"][vc_empty_space alter_height=\"small\" hide_on_mobile=\"\" css=\".vc_custom_1492098690174{margin-top: 0.5rem !important;}\"][trx_sc_services type=\"list\" featured=\"icon\" featured_position=\"left\" hide_excerpt=\"1\" no_margin=\"\" icons_animation=\"\" cat=\"34\" orderby=\"post_date\" order=\"desc\" title_style=\"default\" title_tag=\"h2\" count=\"3\" columns=\"1\" title=\"Activity\" link=\"/things-to-do/\" link_text=\"See More Activity\"][/vc_column_inner][/vc_row_inner][/trx_sc_content][vc_empty_space alter_height=\"huge\" hide_on_mobile=\"\" css=\".vc_custom_1492154377209{margin-top: 1.1rem !important;}\"][/vc_column][/vc_row]',
+				'meta' => array(
+						'trx_addons_options' => array(
+								'layout_type' => 'custom'
+								),
+						'_wpb_shortcodes_custom_css' => '.vc_custom_1492154377209{margin-top: 1.1rem !important;}.vc_custom_1492410716821{padding-left: 35px !important;}.vc_custom_1492098690174{margin-top: 0.5rem !important;}'
+						)
+				),
+		'custom_569' => array(
+				'name' => 'Contact',
+				'template' => '[vc_row][vc_column width=\"1/2\" icons_position=\"left\"][trx_sc_title title_style=\"default\" title_tag=\"h1\" title_align=\"left\" title=\"Mountain Rides\" subtitle=\"Winter Sports\" description=\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare commodo odio, a fermentum ipsum maximus sed. Etiam nulla massa, suscipit non auctor id, gravida sed sem. Nullam ut condimentum sem. Praesent facilisis, dui sed condimentum tristique, eros lacus euismod nisl, quis euismod lacus tellus vitae lorem. Pellentesque at erat euismod orci pulvinar congue.
+
+Sed hendrerit dictum elit, ac posuere nisl luctus eleifend. Mauris luctus, velit at porta commodo, ex diam ornare erat, a laoreet elit nunc volutpat risus. Praesent a risus dignissim ex sollicitudin orci blandit. Mauris ornare, nisl at elementum fermentum, augue enim sodales elit.\"][vc_empty_space hide_on_mobile=\"\" css=\".vc_custom_1491996199155{margin-top: 1.75rem !important;}\"][trx_sc_button type=\"simple\" icon_position=\"left\" link=\"/services-page/\" title=\"more activities\"][/vc_column][vc_column width=\"5/12\" icons_position=\"left\" offset=\"vc_col-sm-offset-1\"][contact-form-7 id=\"568\" title=\"Contact form 1_copy\"][/vc_column][/vc_row]',
+				'meta' => array(
+						'trx_addons_options' => array(
+								'layout_type' => 'custom'
+								),
+						'_wpb_shortcodes_custom_css' => '.vc_custom_1491996199155{margin-top: 1.75rem !important;}'
+						)
+				),
+		'custom_571' => array(
+				'name' => 'Photo of The Day',
+				'template' => '[vc_row][vc_column][vc_empty_space alter_height=\"huge\" hide_on_mobile=\"\" css=\".vc_custom_1491999962210{margin-top: -0.5rem !important;}\"][trx_sc_title title_style=\"default\" title_tag=\"h1\" title_align=\"center\" title=\"PHOTO OF THE DAY!\" subtitle=\"Gallery\"][vc_empty_space alter_height=\"medium\" hide_on_mobile=\"\" css=\".vc_custom_1491999971634{margin-top: -0.6rem !important;}\"][ess_grid alias=\"Gallery\"][vc_empty_space alter_height=\"small\" hide_on_mobile=\"\" css=\".vc_custom_1492001311954{margin-top: -0.1rem !important;}\"][trx_sc_button type=\"default\" size=\"large\" align=\"center\" text_align=\"center\" icon_position=\"left\" icon_type=\"fontawesome\" link=\"/grid/\" title=\"More Photos\"][vc_empty_space alter_height=\"huge\" hide_on_mobile=\"\" css=\".vc_custom_1492001377067{margin-top: 0.9rem !important;}\"][/vc_column][/vc_row]',
+				'meta' => array(
+						'trx_addons_options' => array(
+								'layout_type' => 'custom'
+								),
+						'_wpb_shortcodes_custom_css' => '.vc_custom_1491999962210{margin-top: -0.5rem !important;}.vc_custom_1491999971634{margin-top: -0.6rem !important;}.vc_custom_1492001311954{margin-top: -0.1rem !important;}.vc_custom_1492001377067{margin-top: 0.9rem !important;}'
+						)
+				),
+		'custom_409' => array(
+				'name' => 'Snow Action',
+				'template' => '[vc_row full_width=\"stretch_row\" css=\".vc_custom_1492426776910{background-image: url(http://snow-mountain.ancorathemes.com/wp-content/uploads/2017/03/bg_1.jpg?id=411) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}\" el_class=\"snow_action_row\"][vc_column width=\"7/12\" icons_position=\"left\"][vc_empty_space alter_height=\"huge\" hide_on_mobile=\"\" css=\".vc_custom_1491901672742{margin-top: 1.8rem !important;}\"][trx_sc_title title_style=\"default\" title_tag=\"h1\" title=\"{{Save Up To 30%|| On}} Spring Lodging!\" subtitle=\"Secret Season\" description=\"Insiders know that spring is the best time to bring your family to Snow Mountain. With unlimited sunshine, great snow conditions, and plenty of family-friendly activities to enjoy at both base areas, spring is the best-kept secret of the season. But hurry...with deals this good they won\'t stay a secret for long!\" link=\"/about-us-style-1/\" link_text=\"read more\"][vc_empty_space alter_height=\"huge\" hide_on_mobile=\"\" css=\".vc_custom_1491901676735{margin-top: 1.8rem !important;}\"][/vc_column][/vc_row]',
+				'meta' => array(
+						'trx_addons_options' => array(
+								'layout_type' => 'custom'
+								),
+						'_wpb_shortcodes_custom_css' => '.vc_custom_1492426776910{background-image: url(http://snow-mountain.ancorathemes.com/wp-content/uploads/2017/03/bg_1.jpg?id=411) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1491901672742{margin-top: 1.8rem !important;}.vc_custom_1491901676735{margin-top: 1.8rem !important;}'
+						)
+				),
+		'custom_432' => array(
+				'name' => 'Snow Daily Ticket',
+				'template' => '[vc_row full_width=\"stretch_row\" css=\".vc_custom_1492439945324{background-image: url(http://snow-mountain.ancorathemes.com/wp-content/uploads/2017/03/bg_2.jpg?id=433) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}\" el_class=\"season_pasess\"][vc_column width=\"2/3\" icons_position=\"left\" offset=\"vc_col-sm-offset-4\"][vc_empty_space alter_height=\"huge\" hide_on_mobile=\"\" css=\".vc_custom_1491918974774{margin-top: 1.35rem !important;}\"][trx_sc_title title_style=\"default\" title_tag=\"h1\" title_align=\"left\" title=\"{{DAILY}} TICKET RATES\" subtitle=\"Season Passes\"][vc_empty_space alter_height=\"medium\" hide_on_mobile=\"\" css=\".vc_custom_1491923771384{margin-top: -0.5rem !important;}\"][vc_row_inner el_class=\"actions_row\"][vc_column_inner width=\"1/2\" icons_position=\"left\" css=\".vc_custom_1491919429125{padding-right: 0px !important;}\"][trx_sc_action type=\"default\" full_height=\"\" actions=\"%5B%7B%22position%22%3A%22ml%22%2C%22title%22%3A%22SEASON%20PASSES%22%2C%22description%22%3A%22Get%20access%20to%20the%20best%20skiing%20in%20Utah%20along%20with%20many%20other%20great%20perks!%22%2C%22link%22%3A%22%2Fshop%2F%22%2C%22link_text%22%3A%22ADULT%20FROM%20%24549%20%22%2C%22bg_image%22%3A%22434%22%7D%5D\" slider=\"\" title_style=\"default\"][/vc_column_inner][vc_column_inner width=\"1/2\" icons_position=\"left\" css=\".vc_custom_1491919475998{padding-left: 0px !important;}\"][trx_sc_action type=\"default\" full_height=\"\" actions=\"%5B%7B%22position%22%3A%22ml%22%2C%22title%22%3A%22GO%20CARDS%22%2C%22description%22%3A%22Skip%20the%20ticket%20window%20and%20get%20straight%20to%20the%20lift%20when%20you%20reload%20online!%22%2C%22link%22%3A%22%2Fhome-1%2F%22%2C%22link_text%22%3A%22RELOAD%20AT%20HOME!%22%2C%22icon%22%3A%22Array%22%7D%5D\" slider=\"\" title_style=\"default\"][/vc_column_inner][/vc_row_inner][vc_empty_space alter_height=\"small\" hide_on_mobile=\"\" css=\".vc_custom_1491923698239{margin-top: 0.3rem !important;}\"][vc_column_text]
+<p style=\"text-align: right;\">Choose what suits your style. Snow Mountain offers a variety of ticketing
+options to satisfy the needs of skiers of all ages and abilities.
+
+[/vc_column_text][vc_empty_space alter_height=\"huge\" hide_on_mobile=\"\" css=\".vc_custom_1491923708998{margin-top: 1.3rem !important;}\"][/vc_column][/vc_row]',
+				'meta' => array(
+						'trx_addons_options' => array(
+								'layout_type' => 'custom'
+								),
+						'_wpb_shortcodes_custom_css' => '.vc_custom_1492439945324{background-image: url(http://snow-mountain.ancorathemes.com/wp-content/uploads/2017/03/bg_2.jpg?id=433) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1491918974774{margin-top: 1.35rem !important;}.vc_custom_1491923771384{margin-top: -0.5rem !important;}.vc_custom_1491923698239{margin-top: 0.3rem !important;}.vc_custom_1491923708998{margin-top: 1.3rem !important;}.vc_custom_1491919429125{padding-right: 0px !important;}.vc_custom_1491919475998{padding-left: 0px !important;}'
+						)
+				),
+		'custom_440' => array(
+				'name' => 'Snow Mail',
+				'template' => '<p>[vc_row full_width=\"stretch_row\" css=\".vc_custom_1490734199103{background-image: url(http://snow-mountain.ancorathemes.com/wp-content/uploads/2017/03/soc.jpg?id=445) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}\"][vc_column icons_position=\"left\"][vc_empty_space alter_height=\"medium\" hide_on_mobile=\"\" css=\".vc_custom_1492064747879{margin-top: 1.1rem !important;}\"][/vc_column][vc_column width=\"1/2\" icons_position=\"left\"][vc_column_text][mc4wp_form id=\"441\"][/vc_column_text][/vc_column][vc_column width=\"1/2\" icons_position=\"left\" offset=\"vc_hidden-lg vc_hidden-md vc_hidden-sm\"][vc_empty_space alter_height=\"medium\" hide_on_mobile=\"\"][/vc_column][vc_column width=\"1/2\" icons_position=\"left\"][trx_sc_socials align=\"right\" icons=\"%5B%7B%22link%22%3A%22https%3A%2F%2Ftwitter.com%2Fancora_themes%22%2C%22icon%22%3A%22icon-untitled-13%22%7D%2C%7B%22link%22%3A%22https%3A%2F%2Fwww.facebook.com%2FAncoraThemes%2F%22%2C%22icon%22%3A%22icon-untitled-15%22%7D%2C%7B%22link%22%3A%22https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCdIjRh7-lPVHqTTKpaf8PLA%22%2C%22icon%22%3A%22icon-untitled-16%22%7D%2C%7B%22link%22%3A%22https%3A%2F%2Fwww.instagram.com%2Fancora_themes%2F%22%2C%22icon%22%3A%22icon-untitled-17%22%7D%5D\" title_style=\"default\"][/vc_column][vc_column icons_position=\"left\"][vc_empty_space alter_height=\"medium\" hide_on_mobile=\"\" css=\".vc_custom_1492067379851{margin-top: 0.85rem !important;}\"][/vc_column][/vc_row]</p>
+',
+				'meta' => array(
+						'trx_addons_options' => array(
+								'layout_type' => 'custom'
+								),
+						'_wpb_shortcodes_custom_css' => '.vc_custom_1490734199103{background-image: url(http://snow-mountain.ancorathemes.com/wp-content/uploads/2017/03/soc.jpg?id=445) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1492064747879{margin-top: 1.1rem !important;}.vc_custom_1492067379851{margin-top: 0.85rem !important;}'
+						)
+				),
+		'footer_7' => array(
+				'name' => 'Snow Mountain Footer Corporate',
+				'template' => '[vc_row full_width=\"stretch_row\" row_type=\"normal\" row_delimiter=\"\" row_fixed=\"\" hide_on_tablet=\"\" hide_on_mobile=\"\" hide_on_frontpage=\"\" css=\".vc_custom_1491401715466{background-image: url(http://snow-mountain.ancorathemes.com/wp-content/uploads/2017/02/footer.jpg?id=266) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}\"][vc_column icons_position=\"left\"][trx_sc_content size=\"1_1\" number_position=\"br\" title_style=\"default\"][vc_row_inner][vc_column_inner width=\"1/4\" icons_position=\"left\"][trx_widget_contacts columns=\"\" googlemap=\"\" socials=\"\" logo=\"264\" description=\"For assistance with your Snow Mountain visit, Please Call\" logo_retina=\"265\" phone=\"(123) 456-7890\"][/trx_widget_contacts][/vc_column_inner][vc_column_inner width=\"1/4\" icons_position=\"left\"][vc_wp_custommenu title=\"About\" nav_menu=\"39\"][/vc_column_inner][vc_column_inner width=\"1/4\" icons_position=\"left\"][vc_wp_custommenu title=\"Links\" nav_menu=\"38\"][/vc_column_inner][vc_column_inner width=\"1/4\" icons_position=\"left\"][vc_wp_custommenu title=\"Activity\" nav_menu=\"37\"][/vc_column_inner][/vc_row_inner][/trx_sc_content][/vc_column][/vc_row][vc_row row_type=\"compact\" row_delimiter=\"\" row_fixed=\"\" hide_on_mobile=\"\" hide_on_frontpage=\"\" css=\".vc_custom_1490602826101{background-color: #202528 !important;}\"][vc_column column_align=\"center\" icons_position=\"left\"][trx_sc_content size=\"1_1\" float=\"center\" align=\"left\" number_position=\"br\" title_style=\"default\"][vc_wp_text]
+<p style=\"text-align: left;\"><a href=\"https://themeforest.net/user/ancorathemes/portfolio\" target=\"_blank\" rel=\"noopener noreferrer\">AncoraThemes</a> &copy; {Y}. All Rights Reserved. <a href=\"/about/\" target=\"_blank\" rel=\"noopener noreferrer\">Terms of Use</a> and <a href=\"/privacy-policy/\" target=\"_blank\" rel=\"noopener noreferrer\">Privacy Policy</a></p>
+[/vc_wp_text][/trx_sc_content][/vc_column][/vc_row]',
+				'meta' => array(
+						'trx_addons_options' => array(
+								'layout_type' => 'footer'
+								),
+						'_wpb_shortcodes_custom_css' => '.vc_custom_1491401715466{background-image: url(http://snow-mountain.ancorathemes.com/wp-content/uploads/2017/02/footer.jpg?id=266) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1490602826101{background-color: #202528 !important;}'
+						)
+				),
+		'header_21' => array(
+				'name' => 'Snow Mountain Header Short',
+				'template' => '<p>[vc_row row_type=\"compact\" row_delimiter=\"\" row_fixed=\"1\" hide_on_tablet=\"\" hide_on_mobile=\"\" hide_on_frontpage=\"\" css=\".vc_custom_1491570191929{padding-top: 1.7rem !important;padding-bottom: 1.7rem !important;}\"][vc_column icons_position=\"left\" column_type=\"center\"][trx_sc_content size=\"1_1\" number_position=\"br\" title_style=\"default\" width=\"1_1\" width2=\"1_1\"][vc_row_inner equal_height=\"yes\" content_placement=\"middle\" row_delimiter=\"\"][vc_column_inner width=\"1/3\" column_align=\"left\" icons_position=\"left\"][trx_sc_layouts_logo][/vc_column_inner][vc_column_inner width=\"2/3\" column_align=\"right\" icons_position=\"left\"][trx_sc_layouts_menu location=\"none\" menu=\"main-menu\" animation_in=\"fadeInUpSmall\" animation_out=\"fadeOutDownSmall\" mobile_button=\"1\" mobile_menu=\"1\" hide_on_mobile=\"1\" burger=\"\" mobile=\"1\" stretch=\"\" mobile_hide=\"1\"][trx_sc_button type=\"default\" icon_position=\"left\" hide_on_tablet=\"1\" hide_on_mobile=\"1\" icon_type=\"fontawesome\" icon_fontawesome=\"icon-untitled-1\" link=\"/appointments/\" title=\"BOOK YOUR STAY\"][/vc_column_inner][/vc_row_inner][/trx_sc_content][/vc_column][/vc_row][vc_row row_type=\"normal\" row_delimiter=\"\" row_fixed=\"\" hide_on_tablet=\"\" hide_on_mobile=\"\" hide_on_frontpage=\"1\"][vc_column column_align=\"center\" icons_position=\"left\"][trx_sc_content size=\"1_1\" number_position=\"br\" title_style=\"default\"][trx_sc_layouts_title title=\"1\" meta=\"\" breadcrumbs=\"1\" icon_type=\"fontawesome\" icon_fontawesome=\"\"][/trx_sc_content][/vc_column][/vc_row]</p>
+',
+				'meta' => array(
+						'trx_addons_options' => array(
+								'layout_type' => 'header'
+								),
+						'_wpb_shortcodes_custom_css' => '.vc_custom_1491570191929{padding-top: 1.7rem !important;padding-bottom: 1.7rem !important;}'
+						)
+				),
+		'header_707' => array(
+				'name' => 'Snow Mountain Header Short without Breadcrumbs',
+				'template' => '[vc_row row_type=\"compact\" row_delimiter=\"\" row_fixed=\"1\" hide_on_tablet=\"\" hide_on_mobile=\"\" hide_on_frontpage=\"\" css=\".vc_custom_1491570191929{padding-top: 1.7rem !important;padding-bottom: 1.7rem !important;}\"][vc_column icons_position=\"left\" column_type=\"center\"][trx_sc_content size=\"1_1\" number_position=\"br\" title_style=\"default\" width=\"1_1\" width2=\"1_1\"][vc_row_inner equal_height=\"yes\" content_placement=\"middle\" row_delimiter=\"\"][vc_column_inner width=\"1/3\" column_align=\"left\" icons_position=\"left\"][trx_sc_layouts_logo][/vc_column_inner][vc_column_inner width=\"2/3\" column_align=\"right\" icons_position=\"left\"][trx_sc_layouts_menu location=\"none\" menu=\"main-menu\" animation_in=\"fadeInUpSmall\" animation_out=\"fadeOutDownSmall\" mobile_button=\"1\" mobile_menu=\"1\" hide_on_mobile=\"1\" burger=\"\" mobile=\"1\" stretch=\"\" mobile_hide=\"1\"][trx_sc_button type=\"default\" icon_position=\"left\" hide_on_tablet=\"1\" hide_on_mobile=\"1\" icon_type=\"fontawesome\" icon_fontawesome=\"icon-untitled-1\" link=\"/appointments/\" title=\"BOOK YOUR STAY\"][/vc_column_inner][/vc_row_inner][/trx_sc_content][/vc_column][/vc_row]',
+				'meta' => array(
+						'trx_addons_options' => array(
+								'layout_type' => 'header'
+								),
+						'_wpb_shortcodes_custom_css' => '.vc_custom_1491570191929{padding-top: 1.7rem !important;padding-bottom: 1.7rem !important;}'
+						)
+				),
+		'header_684' => array(
+				'name' => 'Snow Mountain Header Standart',
+				'template' => '[vc_row row_type=\"narrow\" row_delimiter=\"\" row_fixed=\"\" hide_on_tablet=\"1\" hide_on_mobile=\"1\" hide_on_frontpage=\"\" css=\".vc_custom_1492169021982{padding-top: 0px !important;padding-bottom: 0px !important;background-image: url(http://snow-mountain.ancorathemes.com/wp-content/uploads/2017/04/top.jpg?id=695) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}\"][vc_column column_align=\"center\" icons_position=\"left\" column_type=\"center\"][trx_sc_content size=\"1_1\" number_position=\"br\" title_style=\"default\" width=\"1_1\" width2=\"1_1\"][vc_row_inner equal_height=\"yes\" content_placement=\"middle\"][vc_column_inner column_align=\"right\" icons_position=\"left\"][trx_sc_layouts_menu location=\"none\" menu=\"top-panel-menu\" mobile_button=\"\" mobile_menu=\"\" hide_on_mobile=\"\"][trx_sc_layouts_search style=\"fullscreen\" ajax=\"1\"][/vc_column_inner][/vc_row_inner][/trx_sc_content][/vc_column][/vc_row][vc_row row_type=\"compact\" row_delimiter=\"\" row_fixed=\"1\" hide_on_tablet=\"\" hide_on_mobile=\"\" hide_on_frontpage=\"\" css=\".vc_custom_1492170890564{padding-top: 0.75rem !important;padding-bottom: 0.65rem !important;}\"][vc_column icons_position=\"left\" column_type=\"center\"][trx_sc_content size=\"1_1\" number_position=\"br\" title_style=\"default\" width=\"1_1\" width2=\"1_1\"][vc_row_inner equal_height=\"yes\" content_placement=\"middle\" row_delimiter=\"\"][vc_column_inner width=\"1/3\" column_align=\"left\" icons_position=\"left\" css=\".vc_custom_1492171234710{margin-top: -1rem !important;}\"][trx_sc_layouts_logo logo=\"688\" css=\".vc_custom_1492171108386{margin-top: -1rem !important;}\"][/vc_column_inner][vc_column_inner width=\"2/3\" column_align=\"right\" icons_position=\"left\"][trx_sc_layouts_menu location=\"none\" menu=\"main-menu\" animation_in=\"fadeInUpSmall\" animation_out=\"fadeOutDownSmall\" mobile_button=\"1\" mobile_menu=\"1\" hide_on_mobile=\"1\" burger=\"\" mobile=\"1\" stretch=\"\" mobile_hide=\"1\"][trx_sc_button type=\"default\" icon_position=\"left\" hide_on_tablet=\"1\" hide_on_mobile=\"1\" icon_type=\"fontawesome\" icon_fontawesome=\"icon-untitled-1\" link=\"/appointments/\" title=\"BOOK YOUR STAY\"][/vc_column_inner][/vc_row_inner][/trx_sc_content][/vc_column][/vc_row]',
+				'meta' => array(
+						'trx_addons_options' => array(
+								'layout_type' => 'header'
+								),
+						'_wpb_shortcodes_custom_css' => '.vc_custom_1492169021982{padding-top: 0px !important;padding-bottom: 0px !important;background-image: url(http://snow-mountain.ancorathemes.com/wp-content/uploads/2017/04/top.jpg?id=695) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1492170890564{padding-top: 0.75rem !important;padding-bottom: 0.65rem !important;}.vc_custom_1492171234710{margin-top: -1rem !important;}'
+						)
+				),
+		'custom_350' => array(
+				'name' => 'Snow Testimonials',
+				'template' => '[vc_row full_width=\"stretch_row\" css=\".vc_custom_1490691501882{background-image: url(http://snow-mountain.ancorathemes.com/wp-content/uploads/2017/03/bg_3.jpg?id=347) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}\"][vc_column width=\"7/12\" offset=\"vc_col-sm-offset-0\"][vc_empty_space alter_height=\"huge\" hide_on_mobile=\"\" css=\".vc_custom_1491489812614{margin-top: 2.75rem !important;}\"][trx_sc_testimonials type=\"default\" orderby=\"post_date\" order=\"desc\" slider=\"1\" slider_pagination=\"left\" title_style=\"inverse\" title_tag=\"h1\" title_align=\"left\" count=\"3\" columns=\"1\" title=\"Clients About Us\" subtitle=\"Testimonials\"][vc_empty_space alter_height=\"huge\" hide_on_mobile=\"\" css=\".vc_custom_1491491765984{margin-top: 4.6rem !important;}\"][/vc_column][/vc_row]',
+				'meta' => array(
+						'trx_addons_options' => array(
+								'layout_type' => 'custom'
+								),
+						'_wpb_shortcodes_custom_css' => '.vc_custom_1490691501882{background-image: url(http://snow-mountain.ancorathemes.com/wp-content/uploads/2017/03/bg_3.jpg?id=347) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1491489812614{margin-top: 2.75rem !important;}.vc_custom_1491491765984{margin-top: 4.6rem !important;}'
+						)
+				),
+		'custom_720' => array(
+				'name' => 'Welcome',
+				'template' => '[vc_row 0=\"\" equal_height=\"yes\" content_placement=\"middle\"][vc_column width=\"5/12\" icons_position=\"left\"][contact-form-7 id=\"568\"][/vc_column][vc_column width=\"1/2\" icons_position=\"left\" offset=\"vc_hidden-lg vc_hidden-md vc_hidden-sm\"][vc_empty_space alter_height=\"medium\" hide_on_mobile=\"\"][/vc_column][vc_column width=\"7/12\" icons_position=\"left\" css=\".vc_custom_1492421772831{padding-left: 55px !important;}\" el_class=\"welcome_column\"][vc_empty_space hide_on_mobile=\"\" css=\".vc_custom_1492078151528{margin-top: -0.75rem !important;}\"][trx_sc_title title_style=\"default\" title_tag=\"h1\" title_align=\"left\" title=\"About Us\" subtitle=\"Welcome\"][vc_empty_space hide_on_mobile=\"\" css=\".vc_custom_1492078336722{margin-top: 0.3rem !important;}\"][vc_column_text]We’re not saying Snow Mountain has special powers, but a lot of magical things do happen here. The slopes on Bald and Dollar mountains enjoy a nearly lift line–free existence all winter long, not to mention a nearly cloud-free one.[/vc_column_text][vc_empty_space hide_on_mobile=\"\"][vc_column_text]To those who wish to experience the best holiday time ever, we are excited to offer unlimited fun on the slopes, homey cosiness, wonderful views and snow activities. All this selection is presented in a great variety for any taste, age and skill. We are looking forward to seeing you in Snow Mountain ski resort at new season![/vc_column_text][vc_empty_space alter_height=\"small\" hide_on_mobile=\"\" css=\".vc_custom_1492078976269{margin-top: 0.5rem !important;}\"][trx_sc_services type=\"light\" featured=\"icon\" featured_position=\"top\" hide_excerpt=\"1\" no_margin=\"\" icons_animation=\"\" cat=\"33\" orderby=\"post_date\" order=\"desc\" slider=\"\" title_style=\"default\" count=\"3\" columns=\"3\"][/vc_column][vc_column icons_position=\"left\"][vc_empty_space alter_height=\"medium\" hide_on_mobile=\"\" css=\".vc_custom_1492088020630{margin-top: 1.55rem !important;}\"][/vc_column][/vc_row]',
+				'meta' => array(
+						'trx_addons_options' => array(
+								'layout_type' => 'custom'
+								),
+						'_wpb_shortcodes_custom_css' => '.vc_custom_1492421772831{padding-left: 55px !important;}.vc_custom_1492078151528{margin-top: -0.75rem !important;}.vc_custom_1492078336722{margin-top: 0.3rem !important;}.vc_custom_1492078976269{margin-top: 0.5rem !important;}.vc_custom_1492088020630{margin-top: 1.55rem !important;}'
+						)
+				),
+		'custom_228' => array(
+				'name' => 'What do we offer',
+				'template' => '[vc_row][vc_column icons_position=\"left\"][trx_sc_title title_style=\"default\" title_tag=\"h1\" title_align=\"center\" title=\"What do we offer\" subtitle=\"Snow Mountain\"][vc_empty_space alter_height=\"medium\" hide_on_mobile=\"\" css=\".vc_custom_1491654928648{margin-top: -0.5rem !important;}\"][vc_tta_tabs spacing=\"\" alignment=\"center\" active_section=\"1\" no_fill_content_area=\"true\"][vc_tta_section title=\"Lodging\" tab_id=\"1490369526311-f94eb064-a2dc\"][trx_sc_services type=\"default\" featured=\"image\" featured_position=\"top\" hide_excerpt=\"\" icons_animation=\"\" orderby=\"post_date\" order=\"desc\" title_style=\"default\" ids=\"198, 200, 202\" columns=\"3\"][/vc_tta_section][vc_tta_section title=\"Spa & Wellness\" tab_id=\"1490369526318-e25077c7-208f\"][trx_sc_services type=\"default\" featured=\"image\" featured_position=\"top\" hide_excerpt=\"\" icons_animation=\"\" orderby=\"post_date\" order=\"desc\" title_style=\"default\" ids=\"204, 206, 208\" columns=\"3\"][/vc_tta_section][vc_tta_section title=\"Dining\" tab_id=\"1490369559225-fdc21af2-1289\"][trx_sc_services type=\"default\" featured=\"image\" featured_position=\"top\" hide_excerpt=\"\" icons_animation=\"\" orderby=\"post_date\" order=\"desc\" title_style=\"default\" ids=\"210, 212, 214\" columns=\"3\"][/vc_tta_section][vc_tta_section title=\"Shopping\" tab_id=\"1490369583046-e0b7f4c6-dffa\"][trx_sc_services type=\"default\" featured=\"image\" featured_position=\"top\" hide_excerpt=\"\" icons_animation=\"\" orderby=\"post_date\" order=\"desc\" title_style=\"default\" ids=\"216, 218, 220\" columns=\"3\"][/vc_tta_section][vc_tta_section title=\"Groups & Weddings\" tab_id=\"1490369589829-289676ef-9685\"][trx_sc_services type=\"default\" featured=\"image\" featured_position=\"top\" hide_excerpt=\"\" icons_animation=\"\" orderby=\"post_date\" order=\"desc\" title_style=\"default\" ids=\"222, 224, 226\" columns=\"3\"][/vc_tta_section][/vc_tta_tabs][/vc_column][/vc_row]',
+				'meta' => array(
+						'trx_addons_options' => array(
+								'layout_type' => 'custom'
+								),
+						'_wpb_shortcodes_custom_css' => '.vc_custom_1491654928648{margin-top: -0.5rem !important;}'
+						)
+				),
+		'custom_570' => array(
+				'name' => 'Why Choose Us',
+				'template' => '[vc_row full_width=\"stretch_row\" css=\".vc_custom_1492431461360{background-image: url(http://snow-mountain.ancorathemes.com/wp-content/uploads/2017/03/bg-15.jpg?id=439) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}\" el_class=\"why_choose_us_row\"][vc_column width=\"1/2\" icons_position=\"left\" offset=\"vc_col-sm-offset-6\"][vc_empty_space alter_height=\"huge\" hide_on_mobile=\"\" css=\".vc_custom_1491997108434{margin-top: -0.4rem !important;}\"][trx_sc_title title_style=\"default\" title_tag=\"h1\" title_align=\"left\" title=\"{{why}} choose us?\" subtitle=\"Our Guarantee\"][vc_empty_space hide_on_mobile=\"\" css=\".vc_custom_1491999136460{margin-top: 0.4rem !important;}\"][vc_column_text]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare commodo odio, a fermentum ipsum maximus sed. Etiam nulla massa, suscipit non auctor id, gravida sed sem.[/vc_column_text][vc_empty_space hide_on_mobile=\"\" css=\".vc_custom_1491999217403{margin-top: 0.2rem !important;}\"][vc_progress_bar values=\"%5B%7B%22label%22%3A%22Lorem%20ipsum%22%2C%22value%22%3A%2285%22%2C%22color%22%3A%22custom%22%2C%22customcolor%22%3A%22%23eca549%22%7D%2C%7B%22label%22%3A%22Etiam%20aliquet%22%2C%22value%22%3A%2290%22%2C%22color%22%3A%22custom%22%2C%22customcolor%22%3A%22%23eca549%22%7D%2C%7B%22label%22%3A%22Mauris%20mollis%22%2C%22value%22%3A%2275%22%2C%22color%22%3A%22custom%22%2C%22customcolor%22%3A%22%23eca549%22%7D%5D\" bgcolor=\"white\" narrow=\"1\" units=\"%\"][vc_empty_space alter_height=\"huge\" hide_on_mobile=\"\" css=\".vc_custom_1491999439347{margin-top: -0.75rem !important;}\"][/vc_column][/vc_row]',
+				'meta' => array(
+						'trx_addons_options' => array(
+								'layout_type' => 'custom'
+								),
+						'_wpb_shortcodes_custom_css' => '.vc_custom_1492431461360{background-image: url(http://snow-mountain.ancorathemes.com/wp-content/uploads/2017/03/bg-15.jpg?id=439) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1491997108434{margin-top: -0.4rem !important;}.vc_custom_1491999136460{margin-top: 0.4rem !important;}.vc_custom_1491999217403{margin-top: 0.2rem !important;}.vc_custom_1491999439347{margin-top: -0.75rem !important;}'
+						)
+				)
+		);
+?>
