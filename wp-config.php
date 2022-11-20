@@ -37,6 +37,9 @@ define( 'DB_CHARSET', 'utf8mb4' );
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
+
+define('WP_HOME','https://app-78906b14-5971-4d69-a322-57325de90a62.cleverapps.io');
+define('WP_SITEURL','https://app-78906b14-5971-4d69-a322-57325de90a62.cleverapps.io');
 /**#@+
  * Authentication unique keys and salts.
  *
