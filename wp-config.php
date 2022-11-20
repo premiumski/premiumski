@@ -38,8 +38,8 @@ define( 'DB_CHARSET', 'utf8mb4' );
 define( 'DB_COLLATE', '' );
 
 
-define('WP_HOME','https://app-78906b14-5971-4d69-a322-57325de90a62.cleverapps.io');
-define('WP_SITEURL','https://app-78906b14-5971-4d69-a322-57325de90a62.cleverapps.io');
+define('WP_HOME','http://app-78906b14-5971-4d69-a322-57325de90a62.cleverapps.io');
+define('WP_SITEURL','http://app-78906b14-5971-4d69-a322-57325de90a62.cleverapps.io');
 /**#@+
  * Authentication unique keys and salts.
  *
