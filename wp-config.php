@@ -94,7 +94,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
-/**ssl photos*/
+
 function check_proto_set_ssl($forwarded_protocols){
 	$secure = 'off';
 	if ( strstr($forwarded_protocols , ",") ) {
@@ -110,8 +110,9 @@ function check_proto_set_ssl($forwarded_protocols){
 		$forwarded_protocols == 'https' ? $_SERVER["HTTPS"] = 'on' : $_SERVER["HTTPS"] = $secure = 'off';
 	}
 }
-if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
-    $_SERVER['HTTPS'] = 'on';
-} elseif (isset($_SERVER['X_FORWARDED_PROTO']) && $_SERVER['X_FORWARDED_PROTO'] == 'https') {
-    $_SERVER['HTTPS'] = 'on';  
+
+if (isset($_SERVER['HTTP_X_FORWARDED_PROTO'])) {
+	check_proto_set_ssl($_SERVER['HTTP_X_FORWARDED_PROTO']);
+} elseif (isset($_SERVER['X_FORWARDED_PROTO'])) {
+	check_proto_set_ssl($_SERVER['X_FORWARDED_PROTO']);
 }
