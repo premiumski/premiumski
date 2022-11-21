@@ -97,3 +97,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+//Begin Really Simple SSL Server variable fix
+   $_SERVER["HTTPS"] = "on";
+//END Really Simple SSL
