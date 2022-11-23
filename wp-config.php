@@ -20,16 +20,16 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'bix8rjcxa0begq0jnkvm' );
+define( 'DB_NAME', 'b6p4r0bag1pc1umlqkac' );
 
 /** Database username */
-define( 'DB_USER', 'ucdo7hx4jsqomhyl' );
+define( 'DB_USER', 'upho08tgojd3fzdj' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'Z0X4jmso66ZAG98d3ega' );
+define( 'DB_PASSWORD', 'uWl1axPUxIxXu91whIdz' );
 
 /** Database hostname */
-define( 'DB_HOST', 'bix8rjcxa0begq0jnkvm-mysql.services.clever-cloud.com' );
+define( 'DB_HOST', 'b6p4r0bag1pc1umlqkac-mysql.services.clever-cloud.com' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -97,6 +97,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
-//Begin Really Simple SSL Server variable fix
-   $_SERVER["HTTPS"] = "on";
-//END Really Simple SSL
