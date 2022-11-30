@@ -68,6 +68,11 @@ define( 'NONCE_SALT',       '0Oaub&YC~B5iVa:|)*Q%<5v*A]<=Efn5<%JCmf,[_H..6}$*s8~
  */
 $table_prefix = 'wp_';
 
+
+//Begin Really Simple SSL Server variable fix
+   $_SERVER["HTTPS"] = "on";
+//END Really Simple SSL
+
 /**
  * For developers: WordPress debugging mode.
  *
