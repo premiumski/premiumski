@@ -38,8 +38,6 @@ define( 'DB_CHARSET', 'utf8mb4' );
 define( 'DB_COLLATE', '' );
 
 
-define('WP_HOME','http://app-78906b14-5971-4d69-a322-57325de90a62.cleverapps.io');
-define('WP_SITEURL','http://app-78906b14-5971-4d69-a322-57325de90a62.cleverapps.io');
 /**#@+
  * Authentication unique keys and salts.
  *
@@ -82,7 +80,7 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', true );
+define( 'WP_DEBUG', TRUE );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
