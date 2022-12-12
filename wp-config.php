@@ -81,7 +81,7 @@ $table_prefix = 'wp_';
  */
 
 /* Add any custom values between this line and the "stop editing" line. */
-
+define( 'WP_DEBUG', false );
 
 
 /* That's all, stop editing! Happy publishing. */
