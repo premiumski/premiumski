@@ -1,7 +1,7 @@
 <?php 
 /* 
 *      Robo Gallery     
-*      Version: 3.2.6 - 89129
+*      Version: 3.2.9 - 15381
 *      By Robosoft
 *
 *      Contact: https://robogallery.co/ 
@@ -18,11 +18,14 @@ class roboGalleryClass_Type extends roboGalleryClass{
 	public $bodyClass = null;
 
 	public $defaultTheme = 0;
+	private $customThemeCode = '';
 
 	private $moduleUrl = '';
 	private $modulePath = '';
 
 	private $gallertTypeField = '';
+
+
 
 	public function __construct(){		
 
@@ -50,8 +53,10 @@ class roboGalleryClass_Type extends roboGalleryClass{
 	}
 
 	public function hooks(){
+
 		$this->admin_hooks();
 		$this->gallery_hooks();
+		
 		$this->gallery_list_hooks();			
 	}
 
@@ -65,6 +70,8 @@ class roboGalleryClass_Type extends roboGalleryClass{
 		add_action( 'admin_menu', 		array( $this, 'menu_fix_url' ) );
 		add_action( 'admin_bar_menu', 	array( $this, 'menutop_fix_url') , 999  );
 	}	
+
+
 
 	public function gallery_hooks(){
 
@@ -201,6 +208,8 @@ class roboGalleryClass_Type extends roboGalleryClass{
 		if( $typeGallery=='polaroid' ) $typeGallery = 'Polaroid';
 		if( $typeGallery=='polaroidpro' ) $typeGallery = 'Polaroid Pro';
 
+		if( $typeGallery=='custom' ) $typeGallery = 'Custom';		
+
 		printf(
 			'<strong>%s</strong>',
 			ucfirst( $typeGallery )
@@ -229,7 +238,14 @@ class roboGalleryClass_Type extends roboGalleryClass{
 		//wp_enqueue_script (ROBO_GALLERY_ASSETS_PREFIX.'themes-listing', $this->moduleUrl.'js/themes.listing.js', array('jquery'), ROBO_GALLERY_VERSION );
 	}
 
-	function assets_files_dialog(){					
+		
+	public function gallery_theme_init(){ 
+		$this->customThemeCode = apply_filters( 'robogallery_theme_initcustomcode', $this->customThemeCode  );
+	}
+
+	function assets_files_dialog(){	
+
+		$this->gallery_theme_init();		
 
 		wp_register_script( ROBO_GALLERY_ASSETS_PREFIX.'admin-dialog-v2-cfg', $this->moduleUrl.'build/j.js', array(  ), ROBO_GALLERY_VERSION, true ); 
 
@@ -237,6 +253,10 @@ class roboGalleryClass_Type extends roboGalleryClass{
 				'imagesUrl' 	=> $this->moduleUrl . 'build/',
 				'createUrl' 	=> admin_url('post-new.php?post_type='.ROBO_GALLERY_TYPE_POST.'&'.$this->gallertTypeField.'='),
 				'premiumVersion'=> ROBO_GALLERY_TYR,
+
+				'customThemeEnable'=> $this->customThemeCode ? true : false,
+				'customThemeCode'=> $this->customThemeCode,
+				
 				'showDialog' 	=> isset($_GET['showDialog']) && $_GET['showDialog'] ? 1 : 0
 		));     
 		wp_enqueue_script( 	ROBO_GALLERY_ASSETS_PREFIX.'admin-dialog-v2-cfg' );
@@ -260,26 +280,3 @@ class roboGalleryClass_Type extends roboGalleryClass{
 }
 
 $themeClass = new roboGalleryClass_Type();
-
-
-
-  
-
-
-/*
-
-add_filter('views_edit-robo_gallery_table','my_filter');
-
-function my_filter($views){
-	echo "ffffffffffffffffffff";
-    $views['import'] = '<a href="#" class="primary">Import</a>';
-    print_r($views);
-    return $views;
-}
-
-add_action( 'edit_form_top', 'top_form_edit' );
-
-function top_form_edit( $post ) {
-    //if( 'portfolio' == $post->post_type )
-        echo "<a href='#' id='my-custom-header-link'>$post->post_type</a>";
-}*/

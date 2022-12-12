@@ -1,7 +1,7 @@
 <?php
 /* 
 *      Robo Gallery     
-*      Version: 3.2.6 - 89129
+*      Version: 3.2.9 - 15381
 *      By Robosoft
 *
 *      Contact: https://robogallery.co/ 
@@ -68,7 +68,9 @@ class  roboGalleryModulePolaroidV1 extends roboGalleryModuleAbstraction{
 			$this->template
 		);
 
-		if( !$polaroidContent ) return ;
+		$polaroidContent = apply_filters( 'robogallery_legacy_polaroid_content', $polaroidContent, $img, $this  );
+
+		if( !$polaroidContent ) return ;		
 
 		return '<div class="rbs-img-content">'.$polaroidContent.'</div>';
 	}

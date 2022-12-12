@@ -1,7 +1,7 @@
 <?php 
 /* 
 *      Robo Gallery     
-*      Version: 3.2.6 - 89129
+*      Version: 3.2.9 - 15381
 *      By Robosoft
 *
 *      Contact: https://robogallery.co/ 
@@ -39,6 +39,8 @@ class roboGalleryClass_TypeThemeOptions extends roboGalleryClass{
 			
 			$this->themeOptions = array_merge( $this->themeOptions, $themeProOptions  );			
 		}
+
+		$this->themeOptions = apply_filters( 'robogallery_theme_init', $this->themeOptions );
 
 		parent::__construct();		
 
@@ -78,7 +80,7 @@ class roboGalleryClass_TypeThemeOptions extends roboGalleryClass{
 		//echo "typeGallery".$typeGallery;
 		//echo "typeId".$typeId;
 
-
+		
 		if( !isset($this->themeOptions[$typeGallery]) ) return $args;
 		//echo ('is group exists');
 		

@@ -22,7 +22,7 @@
 				echo 'checked=checked';}
 			?>
 			>
-			<label for="snow_types2"><?php esc_html_e( 'Snows Flacks', 'weather-effect' ); ?></label>
+			<label for="snow_types2"><?php esc_html_e( 'Snow Flakes', 'weather-effect' ); ?></label>
 		</p>
 	</div>
 	
@@ -106,9 +106,9 @@
 
 	<!--Winter Falling Settings -->
 	<div id="snow_falling" class="tab-content">
-		<p class="bg-title"><?php esc_html_e( '2. Falling Snows Flacks Settings', 'weather-effect' ); ?> </p>
+		<p class="bg-title"><?php esc_html_e( '2. Falling Snows Flakes Settings', 'weather-effect' ); ?> </p>
 		<div class="row" style="padding-left: 20px;">&nbsp;&nbsp;&nbsp;
-			<label for=""><?php esc_html_e( 'A. Minimum Snows Flacks Size On page', 'weather-effect' ); ?></label>
+			<label for=""><?php esc_html_e( 'A. Minimum Snows Flakes Size On page', 'weather-effect' ); ?></label>
 			<?php
 			if ( isset( $weather_effect_settings['min_size_falling'] ) ) {
 				$min_size_falling = $weather_effect_settings['min_size_falling'];
@@ -123,7 +123,7 @@
 			</p>
 		</div>
 		<div class="row" style="padding-left: 20px;">&nbsp;&nbsp;&nbsp;
-			<label for=""><?php esc_html_e( 'B. Maximum Snows Flacks Size On page', 'weather-effect' ); ?></label>
+			<label for=""><?php esc_html_e( 'B. Maximum Snows Flakes Size On page', 'weather-effect' ); ?></label>
 			<?php
 			if ( isset( $weather_effect_settings['max_size_falling'] ) ) {
 				$max_size_falling = $weather_effect_settings['max_size_falling'];
@@ -138,7 +138,7 @@
 			</p>
 		</div>
 		<div class="row" style="padding-left: 20px;">&nbsp;&nbsp;&nbsp;
-			<label for=""><?php esc_html_e( 'C. Snows Flacks Falls Time Duration', 'weather-effect' ); ?></label>
+			<label for=""><?php esc_html_e( 'C. Snows Flakes Falls Time Duration', 'weather-effect' ); ?></label>
 			<?php
 			if ( isset( $weather_effect_settings['snow_falling_time'] ) ) {
 				$snow_falling_time = $weather_effect_settings['snow_falling_time'];
@@ -153,7 +153,7 @@
 			</p>
 		</div>	
 		<div class="row" style="padding-left: 20px;">&nbsp;&nbsp;&nbsp;
-			<label for=""><?php esc_html_e( 'D. Select Flacks Color', 'weather-effect' ); ?></label><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+			<label for=""><?php esc_html_e( 'D. Select Flakes Color', 'weather-effect' ); ?></label><br><br>&nbsp;&nbsp;&nbsp;&nbsp;
 			<?php
 			if ( isset( $weather_effect_settings['snow_falling_color'] ) ) {
 				$snow_falling_color = $weather_effect_settings['snow_falling_color'];
@@ -162,7 +162,7 @@
 			}
 			?>
 						
-			<input type="text" class="form-control" id="snow_falling_color" name="snow_falling_color" placeholder="chose form color" value="<?php echo esc_html( $snow_falling_color ); ?>"></br></br>
+			<input type="text" class="form-control" id="snow_falling_color" name="snow_falling_color" placeholder="choose form color" value="<?php echo esc_html( $snow_falling_color ); ?>"></br></br>
 		</div><br>
 	</div>
 	<!--  Snow Falling Settings End -->

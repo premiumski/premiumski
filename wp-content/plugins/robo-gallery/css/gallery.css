@@ -534,6 +534,7 @@ screen and (max-height: 300px) {
     background: white;
     color: rgb(51, 51, 51);
     line-height: 17px;
+    cursor: pointer;
   }
 
 /* THUMBNAIL   */

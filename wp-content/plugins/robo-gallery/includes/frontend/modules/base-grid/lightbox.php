@@ -1,7 +1,7 @@
 <?php
 /* 
 *      Robo Gallery     
-*      Version: 3.2.6 - 89129
+*      Version: 3.2.9 - 15381
 *      By Robosoft
 *
 *      Contact: https://robogallery.co/ 
@@ -63,16 +63,15 @@ class  roboGalleryModuleLightboxV1 extends roboGalleryModuleAbstraction{
 	public function initLightboxLink($img){
 		if( empty($img['link']) ) return false;
 		
-		if( !$this->getMeta('hover') ) return false;
+		//if( !$this->getMeta('hover') ) return false;
 
-		if( !empty($this->getMeta('zoomIcon')['enabled']) ) return false;
-
-		if( !empty($this->getMeta('linkIcon')['enabled']) ) return false;
+		//if( !empty($this->getMeta('zoomIcon')['enabled']) ) return false;
+		//if( !empty($this->getMeta('linkIcon')['enabled']) ) return false;
 		
 		$linkType = empty($img['typelink']) ? 'link' : 'blanklink';
 		$this->element->setElementAttr('rbs-img-data-popup'.$img['id'], 'data-type', $linkType );
 		$this->element->setElementAttr('rbs-img-data-popup'.$img['id'], 'data-popup', $img['link'] );
-		return true;	
+		return true;
 	}
 
 	public function initLightboxClick($img){

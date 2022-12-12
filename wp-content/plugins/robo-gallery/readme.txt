@@ -4,7 +4,7 @@ Donate link: https://robosoft.co/robogallery
 Tags: gallery, photo gallery, image gallery, wordpress gallery plugin, responsive gallery
 Requires at least: 3.3
 Tested up to: 6.1
-Stable tag: 3.2.5
+Stable tag: 3.2.9
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -51,7 +51,7 @@ With our plugin, even newbies in WordPress will be able to create their first ga
 *   **No Right click / Content protection** -  in Robo gallery possible to disable right click to prevent copy of the gallery content.  Content copy protection is very important for every photographer's portfolio photos.
 *   **Lightbox no right click / Content protection** -  in Robo gallery possible to disable right click to prevent copy of the gallery lightbox content.  Content copy protection is very important for every photographer's portfolio photos.
 *   **One click setup** - implemented one click wizard with the 5 types: image grid, mosaic, masonry, polaroid, youtube gallery.
-*   **No limits** - no limits for amount of instances with 5 free types: photo grid, mosaic, masonry, polaroid, youtube grid.
+*   **No limits** - no limits for the number of instances with 5 free types: photo grid, mosaic, masonry, polaroid, youtube grid.
 *   **No limits for images / photos** - no limits for amount of the images / photos in every album.
 *   **Gutenberg block** - implemented Gutenberg gallery block for simple and fast configuration of the plugin in Gutenberg editor.
 *   **Fully responsive and Mobile features** - plugin implemented with advanced settings for different devices screen size.
@@ -238,6 +238,9 @@ Plugin implemented in native Wordpress style. All code implemented based on Word
 If any problem occurs, please contact us.
 
 == Changelog ==
+
+= 3.2.9 =
+*  Modification of the hover functionality, links, buttons
 
 = 3.2.5 =
 *  Fix the compatibility settings of the plugin
@@ -695,7 +698,5 @@ If any problem occurs, please contact us.
 
 == Upgrade Notice ==
 
-= 3.2.5 =
-Fix the compatibility settings of the plugin
-Admin section modification 
-Compatibility with Wordpress 6.1
+= 3.2.9 =
+Modification of the hover functionality, links, buttons

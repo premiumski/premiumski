@@ -1,7 +1,7 @@
 <?php
 /* 
 *      Robo Gallery     
-*      Version: 3.2.6 - 89129
+*      Version: 3.2.9 - 15381
 *      By Robosoft
 *
 *      Contact: https://robogallery.co/ 
@@ -11,6 +11,13 @@
  */
 
 if ( ! defined( 'WPINC' ) )  die;
+
+$config = array(
+	"preview_click" => true,
+);
+
+do_action( 'robogallery_field_gallery_init', $config );
+$config = apply_filters( 'robogallery_field_gallery_config', $config );
 
 wp_enqueue_media();
 wp_enqueue_style('wp-jquery-ui-dialog');
@@ -37,7 +44,8 @@ wp_enqueue_script(  ROBO_GALLERY_ASSETS_PREFIX.'-field-type-gallery' );
 
 $translation_array = array( 
 	'iconUrl' => admin_url('/images/spinner.gif'),		
-	'endpoint' => get_rest_url(null, 'robogallery/v1')
+	'endpoint' => get_rest_url(null, 'robogallery/v1'),
+	'preview_click' => $config['preview_click']
 );
 
 wp_localize_script( ROBO_GALLERY_ASSETS_PREFIX.'-field-type-gallery', 'roboGalleryFieldGallery', $translation_array );
@@ -105,3 +113,5 @@ if ( $value == null || empty( $value ) || $value == ' ' || $value == '' ) $value
 		<div class="rb-pro-desc"><span class="dashicons dashicons-insert"></span> Mixed Gallery (Photos/Videos/Linked Images)</div>
 	</div>
 <?php endif; 
+
+do_action( 'robogallery_field_gallery_end', $config );

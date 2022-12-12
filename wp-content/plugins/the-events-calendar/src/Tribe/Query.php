@@ -22,6 +22,7 @@ class Tribe__Events__Query {
 	 * @param WP_Query $query
 	 */
 	public static function parse_query( $query ) {
+		global $wp_query;
 		if ( is_admin() ) {
 			return $query;
 		}
@@ -43,7 +44,8 @@ class Tribe__Events__Query {
 				 */
 				add_filter( 'option_page_on_front', [ __CLASS__, 'default_page_on_front' ] );
 				// check option for including events in the main wordpress loop, if true, add events post type
-				if ( tribe_get_option( 'showEventsInMainLoop', false ) && ! get_query_var( 'tribe_events_front_page' ) ) {
+				if ( tribe_get_option( 'showEventsInMainLoop', false )
+				     && ( ! isset( $wp_query ) || ! get_query_var( 'tribe_events_front_page' ) ) ) {
 					$query->query_vars['post_type']   = isset( $query->query_vars['post_type'] )
 						? ( array ) $query->query_vars['post_type']
 						: [ 'post' ];
@@ -489,6 +491,11 @@ class Tribe__Events__Query {
 
 		// If a clause on the '_Event(Start|End)Date(UTC)' meta key is present in any query variable, bail.
 		if ( ! empty( $query_vars ) && preg_match( '/_Event(Start|End)Date(UTC)?/', serialize( $query_vars ) ) ) {
+			return;
+		}
+
+		// If the query order is `none` or `rand` we don't need to order it.
+		if ( in_array( $query->get( 'orderby' ), [ 'none', 'rand' ], true ) ) {
 			return;
 		}
 

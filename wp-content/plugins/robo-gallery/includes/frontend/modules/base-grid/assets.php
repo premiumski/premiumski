@@ -1,7 +1,7 @@
 <?php
 /* 
 *      Robo Gallery     
-*      Version: 3.2.6 - 89129
+*      Version: 3.2.9 - 15381
 *      By Robosoft
 *
 *      Contact: https://robogallery.co/ 
@@ -16,11 +16,15 @@ class  roboGalleryModuleAssetsV1 extends roboGalleryModuleAssets{
 
 	protected function initJsFilesListAlt(){			
 		$this->files['js']['robo-gallery-alt'] = array( 'url' => ROBO_GALLERY_URL.'js/robo_gallery_alt.js', 'depend' => array() );
+
+		$this->files['js'] = apply_filters( 'robogallery_legacy_assets_js_alt', $this->files['js'], $this );
 	}
 
 	protected function initJsFilesList(){	
 		$this->files['js']['jquery'] 		= array( 'url' => '',  									 'depend' => array()  );
 		$this->files['js']['robo-gallery'] 	= array( 'url' => ROBO_GALLERY_URL.'js/robo_gallery.js', 'depend' => array('jquery') );
+
+		$this->files['js'] = apply_filters( 'robogallery_legacy_assets_js', $this->files['js'], $this );
 	}
 
 	protected function initCssFilesList(){
@@ -29,6 +33,8 @@ class  roboGalleryModuleAssetsV1 extends roboGalleryModuleAssets{
 		if( get_option( ROBO_GALLERY_PREFIX.'fontLoad', 'on' )=='on'){
 			$this->files['css']['font'] = array( 'url' => ROBO_GALLERY_URL.'css/gallery.font.css', 'depend' => array() );
 		}
+
+		$this->files['css'] = apply_filters( 'robogallery_legacy_assets_css', $this->files['css'], $this );
 	}
 
 }
